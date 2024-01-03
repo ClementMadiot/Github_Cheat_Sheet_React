@@ -1,14 +1,11 @@
-import './App.css';
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>GitHub heat Sheet</h1>
-      <h2>Versionner son travail</h2>
-      </header>
-    </div>
-  );
+    <main>
+      <Home/>
+    </main>
+  )
 }
 
-export default App;
+export default App
