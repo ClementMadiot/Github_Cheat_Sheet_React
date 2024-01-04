@@ -1,0 +1,25 @@
+.commit-project{
+  display: flex;
+  align-items: center;
+}
+.black-box{
+  background: black;
+  border-radius: 15px;
+  margin: 1rem 0;
+}
+.black-box h3{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.black-box p {
+  color: $primary-color;
+}
+
+.img-git{
+  width: 40%;
+}
+.img-git img{
+  height: 154px;
+  width: 180px;
+}
