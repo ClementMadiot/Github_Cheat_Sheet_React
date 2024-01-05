@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const GitStatus = () => {
   return (
@@ -6,21 +6,26 @@ const GitStatus = () => {
       <div className="title-p-box">
         <h3>Autres commandes</h3>
         <div className="head-bar"></div>
-        <div className="list-git">
-          <ul>
-            <li className="definition">
-            <p><strong>git status</strong></p>
-            <p><strong>git diff</strong></p>
-            </li>
-            <li className="explication">
-              <p>état du fichier</p>
-              <p>affiche les modifications avant commit</p>
-            </li>
-          </ul>
-        </div>
+
+        <ul>
+          <li>
+            <p className="definition">
+              <strong>git status</strong>
+            </p>
+            <p className="explication">état du fichier</p>
+          </li>
+          <li>
+            <p className="definition">
+              <strong>git diff</strong>
+            </p>
+            <p className="explication">
+              affiche les modifications avant commit
+            </p>
+          </li>
+        </ul>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default GitStatus;
+export default GitStatus

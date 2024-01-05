@@ -8,7 +8,7 @@ const CommitOwnP = () => {
       <div className="title-p-box">
         <h3>Commit son projet</h3>
         <div className="head-bar"></div>
-        <div className="list-git">
+
           <ul>
             <li>
             <p><strong>git add .</strong></p>
@@ -16,7 +16,7 @@ const CommitOwnP = () => {
             <p><strong>git push -u origin main</strong></p>
             </li>
           </ul>
-        </div>
+
       </div>
     </aside>
         <aside className="img-git">

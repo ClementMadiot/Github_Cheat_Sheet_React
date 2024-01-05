@@ -1,43 +1,55 @@
-import React from 'react';
+import React from 'react'
 
 const ManageCommit = () => {
   return (
-    <article className='gray-box'>
-      <div className='title-p-box'>
-      <h3>Gérer les commits</h3>
-      <div className='head-bar'></div>
-      <div className='list-git'>
+    <article className="gray-box">
+      <div className="title-p-box">
+        <h3>Gérer les commits</h3>
+        <div className="head-bar"></div>
 
-      <ul>
-        <li className='definition'>
-            <p><strong>git log</strong></p>
-            <p><strong>git log -n2</strong></p>
-            <p><strong>git show </strong> sha-1</p>
-            <p><strong>git checkout</strong> sha-1</p>
-            <p><strong>git checkout main</strong></p>
-        </li>
-        <li className='explication'>
-            <p>
-              liste des commits
+        <ul>
+          <li>
+            <p className="definition">
+              <strong>git log</strong>
             </p>
-            <p>
-              affiche les 2 derniers commits
+            <p className="explication">liste des commits</p>
+          </li>
+          <li>
+            <p className="definition">
+              <strong>git log -n2</strong>
             </p>
-            <p>
-              voir un commit spécifique (cliquer molette souris pour copier) 
+            <p className="explication">affiche les 2 derniers commits</p>
+          </li>
+          <li>
+            <p className="definition">
+              <strong>git log -n2</strong>
             </p>
-            <p>
-              remettre la version du sha-1
+            <p className="explication">
+              voir un commit spécifique (cliquer molette souris pour copier)
             </p>
-            <p>
-            remettre la version la plus récent
+          </li>
+          <li>
+            <p className="definition">
+              <strong>git show </strong> sha-1
             </p>
-        </li>
-      </ul>
-      </div>
+            <p className="explication">affiche les 2 derniers commits</p>
+          </li>
+          <li>
+            <p className="definition">
+              <strong>git checkout</strong> sha-1
+            </p>
+            <p className="explication">remettre la version du sha-1</p>
+          </li>
+          <li>
+            <p className="definition">
+              <strong>git checkout main</strong>
+            </p>
+            <p className="explication">remettre la version la plus récent</p>
+          </li>
+        </ul>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default ManageCommit;
+export default ManageCommit

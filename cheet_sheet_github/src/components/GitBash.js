@@ -6,27 +6,53 @@ const GitBash = () => {
       <div className="title-p-box">
         <h3>Naviguer dans Git Bash</h3>
         <div className="head-bar"></div>
-        <div className="list-git">
           <ul>
-            <li className="definition">
-              <p><strong>pwd</strong></p>
-              <p><strong>mkdir</strong>"dossier"</p>
-              <p><strong>touch</strong>fichier.txt</p>
-              <p><strong>ls</strong></p>
-              <p><strong>ls -la</strong></p>
-              <p><strong>cd</strong>dossier</p>
-              <p><strong>cd ..</strong>Remonter d'un dossier</p>
+            <li>
+              <p className="definition">
+                <strong>pwd</strong>
+              </p>
+              <p className="explication">savoir dans quel dossier je suis</p>
             </li>
-            <li className="explication">
-              <p>savoir dans quel dossier je suis</p>
-              <p>créer un dossier (Make Directory)</p>
-              <p>liste le dossier courant</p>
-              <p>liste tout plus précisément  que ls</p>
-              <p>aller dans le dossier (Change Directory)</p>
-              <p>Remonter d'un dossier</p>
+            <li>
+              <p className="definition">
+                <strong>mkdir</strong> "dossier"
+              </p>
+              <p className="explication">créer un dossier (Make Directory)</p>
+            </li>
+            <li>
+              <p className="definition">
+                <strong>touch</strong> "file"
+              </p>
+              <p className="explication">créer un fichier</p>
+            </li>
+            <li>
+              <p className="definition">
+                <strong>ls</strong>
+              </p>
+              <p className="explication">liste le dossier courant</p>
+            </li>
+            <li>
+              <p className="definition">
+                <strong>ls -la</strong>
+              </p>
+              <p className="explication">liste tout plus précisément que ls</p>
+            </li>
+            <li>
+              <p className="definition">
+                <strong>cd</strong> dossier
+              </p>
+              <p className="explication">
+                aller dans le dossier (Change Directory)
+              </p>
+            </li>
+            <li>
+              <p className="definition">
+                <strong>cd ..</strong>
+              </p>
+
+              <p className="explication">Remonter d'un dossier</p>
             </li>
           </ul>
-        </div>
       </div>
     </article>
   )
