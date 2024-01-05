@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { GitStatusData } from '../data/CheatSheet';
 
 const GitStatus = () => {
   return (
@@ -8,20 +9,16 @@ const GitStatus = () => {
         <div className="head-bar"></div>
 
         <ul>
-          <li>
+        {GitStatusData.map(({ id, description, explication })=> (
+          <li key={id}>
             <p className="definition">
-              <strong>git status</strong>
-            </p>
-            <p className="explication">état du fichier</p>
-          </li>
-          <li>
-            <p className="definition">
-              <strong>git diff</strong>
+              <b>{description.bold}</b> {description.noBold}
             </p>
             <p className="explication">
-              affiche les modifications avant commit
+              {explication}
             </p>
           </li>
+            ))}
         </ul>
       </div>
     </article>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { OnlineVersionData } from '../data/CheatSheet';
 
 const OnlineVersion = () => {
   return (
@@ -8,31 +9,19 @@ const OnlineVersion = () => {
         <div className="head-bar"></div>
 
         <ul>
-          <li>
-            <p className="definition">
-              <strong>git clone</strong> lien Github
-            </p>
-            <p className="explication">
-              récupérer le travail depuis le dépôt distant
-            </p>
-          </li>
+      {OnlineVersionData.map(({ id, description, explication }) => (
+          <li key={id}>
+          <p className="definition">
+            <b>{description.bold}</b> {description.noBold}
+          </p>
+          <p className="explication">
+            {explication}
+          </p>
+        </li>
 
-          <li>
-            <p className="definition">
-              <strong>git push -u origin main</strong>
-            </p>
-            <p className="explication">
-              pousse les modifications vers le serveur
-            </p>
-          </li>
-          <li>
-            <p className="definition">
-              <strong>git push -f origin main</strong>
-            </p>
-            <p className="explication">
-              pousse de force les modifications (manipuler avec précaution)
-            </p>
-          </li>
+      ))}
+
+          
         </ul>
       </div>
     </article>

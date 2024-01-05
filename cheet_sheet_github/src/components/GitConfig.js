@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { GitConfigData } from '../data/CheatSheet';
 
 const GitConfig = () => {
   return (
@@ -8,25 +9,16 @@ const GitConfig = () => {
         <div className="head-bar"></div>
 
         <ul className='git_config_list'>
-          <li>
+        {GitConfigData.map(({ id, description, explication })=> (
+          <li key={id}>
             <p className="definition">
-              <strong>git config --global user.name</strong>
+              <b>{description.bold}</b> {description.noBold}
             </p>
-            <p className="explication">"Mon Nom"</p>
-          </li>
-          <li>
-            <p className="definition">
-              <strong>git config --global user.email</strong>
+            <p className="explication">
+              {explication}
             </p>
-            <p className="explication">mon email</p>
           </li>
-          <li>
-            <p className="definition">
-              <strong>git config --global --list</strong>
-            </p>
-
-            <p className="explication">Affiche nom et email</p>
-          </li>
+            ))}
         </ul>
       </div>
     </article>
