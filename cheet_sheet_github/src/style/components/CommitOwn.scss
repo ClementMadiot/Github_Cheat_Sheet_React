@@ -1,12 +1,15 @@
 .commit-project{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .black-box{
   background: black;
   border-radius: 15px;
   margin: 1rem 0;
+  max-width: 326px;
 }
+
 .black-box h3{
   color: white;
   text-align: center;
@@ -14,11 +17,11 @@
 .black-box p {
   color: $primary-color;
 }
-
-.img-git{
-  width: 40%;
+.black-box li {
+  flex-direction: column;
 }
+
 .img-git img{
-  height: 154px;
-  width: 180px;
+  height: 194px;
+  width: 220px;
 }
