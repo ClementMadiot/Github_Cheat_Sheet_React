@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
-import GitPull from '../components/GitPull';
+import GitPull from '../components/TeamWorkPart/GitPull';
+import TitleBox from '../components/TitleBox';
 
 const TeamWork = () => {
   return (
@@ -8,6 +9,7 @@ const TeamWork = () => {
       <section className='right-part'>
         <Header/>
         <GitPull/>
+        <TitleBox/>
       </section>
       <section className='left-part'></section>
     </main>
