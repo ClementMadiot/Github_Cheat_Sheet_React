@@ -1,52 +1,34 @@
-import React from 'react';
+import React from 'react'
+import { TeamWorkTitle } from '../../data/TitleData'
+// import List from '../list'
 
 const GitPull = () => {
   return (
-    <article className="green-box">
-      <div className="title-p-box">
-        <h3>Travailler avec un dépot distant</h3>
-        <div className="head-bar"></div>
-        <ul>
-          <li>
-            <p className="definition">
-              <strong>git init</strong>
-            </p>
-            <p className="explication">
-              initialise le dépot (se mettre sur le bon dossier), mieux à faire
-              depuis Github.com
-            </p>
-          </li>
-          <li>
-            <p className="definition">
-              <strong>git init</strong>
-            </p>
-            <p className="explication">
-              initialise le dépot (se mettre sur le bon dossier), mieux à faire
-              depuis Github.com
-            </p>
-          </li>
-          <li>
-            <p className="definition">
-              <strong>git add .</strong>
-            </p>
-            <p className="explication">
-              ajoute toutes les modifications ( le . symbolise tout )
-            </p>
-          </li>
-          <li>
-            <p className="definition">
-              <strong>git commit -m </strong> "explication"
-            </p>
-            <p className="explication">
-              créer un nouveau commit <strong>git add </strong> pousse les
-              fichiers en zone d'index, <strong> git commit</strong> les
-              sauvegarde réellement dans un nouveau commit
-            </p>
-          </li>
-        </ul>
-      </div>
+    <article>
+      {TeamWorkTitle.map((item) => (
+        <article className={item.style}>
+          <div className="title-p-box">
+            <h3>{item.title}</h3>
+            <div className="head-bar"></div>
+            <ul>
+              {item.defenition
+                ? item.defenition.bold.map((boldItem, index) => (
+                    <li key={index}>
+                      <p className="definition">
+                        <b>{boldItem}</b> {item.defenition.noBold[index]}
+                      </p>
+                      <p className="explication">
+                        {item.defenition.explication[index]}
+                      </p>
+                    </li>
+                  ))
+                : null}
+            </ul>
+          </div>
+        </article>
+      ))}
     </article>
-  );
-};
+  )
+}
 
-export default GitPull;
+export default GitPull
