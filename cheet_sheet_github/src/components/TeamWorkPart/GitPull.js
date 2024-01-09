@@ -1,4 +1,5 @@
-import { TeamWorkRight } from '../../data/TeamWorkData'
+// import { TeamWorkRight } from '../../data/TeamWorkData';
+import { TeamWorkRight } from '../../data/HomeData';
 import Header from '../Header';
 
 const GitPull = () => {

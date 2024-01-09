@@ -1,5 +1,6 @@
 import React from 'react';
-import { TeamWorkLeft } from '../../data/TeamWorkData'
+// import { TeamWorkLeft } from '../../data/TeamWorkData'
+import { TeamWorkLeft } from '../../data/HomeData'
 import CommitOwnP from '../CommitOwn';
 
 const Gitignore = () => {
