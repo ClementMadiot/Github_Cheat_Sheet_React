@@ -5,11 +5,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
-  const handleClick = event => {
+  const handleClick = () => {
     setIsButtonClicked(!isButtonClicked)
-    event.currentTarget.classList.toggle(
-      'left','right'
-    )
   }
 
   

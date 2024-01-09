@@ -1,12 +1,11 @@
-import React from 'react'
-import { TeamWorkTitle } from '../../data/TitleData'
-import Header from '../Header';
+import React from 'react';
+import { TeamWorkTitleLeft } from '../../data/TitleData'
+import CommitOwnP from '../CommitOwn';
 
-const GitPull = () => {
+const Gitignore = () => {
   return (
-    <section section className='right-part'>
-      <Header/>
-      {TeamWorkTitle.map((item) => (
+    <section className='left-part'>
+      {TeamWorkTitleLeft.map((item) => (
         <article className={item.style}>
           <div className="title-p-box">
             <h3>{item.title}</h3>
@@ -28,8 +27,9 @@ const GitPull = () => {
           </div>
         </article>
       ))}
+<CommitOwnP/>
     </section>
-  )
-}
+  );
+};
 
-export default GitPull
+export default Gitignore;

@@ -35,6 +35,7 @@ export const TeamWorkTitle = [
     id: 'N7AxCfh3',
     title: 'Travailler avec un dépot distant',
     style: 'green-box',
+    postion: 'right-part',
     defenition: {
       bold: ['git pull', 'git pull --rebase .', 'git merge '],
       noBold: ['', '', '"non_branche"'],
@@ -49,6 +50,7 @@ export const TeamWorkTitle = [
     id: 'VRsg2NfY',
     title: 'Gérer les branches',
     style: 'gray-box',
+    postion: 'right-part',
     defenition: {
       bold: ['git branch', 'git branch .', 'git checkout', 'git branch -d'],
       noBold: ['"non_branche"', '', '"non_branche"', '"non_branche"'],
@@ -64,6 +66,7 @@ export const TeamWorkTitle = [
     id: '6zGdryoK',
     title: 'Gérer les branches sur un dépôt distant',
     style: 'green-box',
+    postion: 'right-part',
     defenition: {
       bold: ['git push --set-upstream origin', 'git branch -a', 'git push origin --delete'],
       noBold: ['"nom_branche"', '', '"nom_branche"'],
@@ -74,10 +77,14 @@ export const TeamWorkTitle = [
     ],
     },
   },
+  
+]
+export const TeamWorkTitleLeft = [
   {
     id: 'r4hG88px',
     title: 'Fichiers indispensables',
     style: 'gray-box',
+    postion: 'left-part',
     defenition: {
       bold: ['.gitignore','','','README.md'],
       noBold: ['','',],
@@ -91,6 +98,7 @@ export const TeamWorkTitle = [
     id: '9qE3Rxu3',
     title: 'Trouver qui a fait quoi',
     style: 'gray-box',
+    postion: 'left-part',
     defenition: {
       bold: ['git blame', 'git blame -L 10,20', ""],
       noBold: ['index.html','index.html'],

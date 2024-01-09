@@ -1,21 +1,15 @@
-import React from 'react';
-import Header from '../components/Header';
-import GitPull from '../components/TeamWorkPart/GitPull';
-import CommitOwnP from '../components/CommitOwn';
+import React from 'react'
+import Header from '../components/Header'
+import GitPull from '../components/TeamWorkPart/GitPull'
+import Gitignore from '../components/TeamWorkPart/Gitignore'
 
 const TeamWork = () => {
   return (
     <main>
-      <section className='right-part'>
-        <Header/>
-        <GitPull/>
-      </section>
-      <section className='left-part'>
-        <CommitOwnP/>
-
-      </section>
+      <GitPull />
+      <Gitignore />
     </main>
-  );
-};
+  )
+}
 
-export default TeamWork;
+export default TeamWork
