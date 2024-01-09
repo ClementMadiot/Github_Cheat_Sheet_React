@@ -1,12 +1,12 @@
-import React from 'react';
-import { TeamWorkLeft } from '../../data/TeamWorkData'
-import CommitOwnP from '../CommitOwn';
+import { LocalVersionData } from '../../data/HomeData'
+import Header from '../Header';
 
-const Gitignore = () => {
+const LocalVersion = () => {
   return (
-    <section className='left-part'>
-      {TeamWorkLeft.map((item, index) => (
-        <article key={index} className={item.style}>
+    <section className='right-part'>
+      <Header/>
+      {LocalVersionData.map((item, index) => (
+        <article key={index} id={item.id} className={item.style}>
           <div className="title-p-box">
             <h3>{item.title}</h3>
             <div className="head-bar"></div>
@@ -27,9 +27,8 @@ const Gitignore = () => {
           </div>
         </article>
       ))}
-<CommitOwnP/>
     </section>
   );
 };
 
-export default Gitignore;
+export default LocalVersion;

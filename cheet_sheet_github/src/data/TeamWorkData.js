@@ -1,41 +1,8 @@
-export const HomeTitle = [
-  {
-    id: 'pS6QTXq7',
-    title: 'Versionner en local',
-    style: 'green-box',
-  },
-  {
-    id: 'b3dtBEfB',
-    title: 'Gérer les commits',
-    style: 'gray-box',
-  },
-  {
-    id: 'J5XS9vUy',
-    title: 'Versionner sur un dépot distant',
-    style: 'green-box',
-  },
-  {
-    id: 'VdQR97Qn',
-    title: 'Naviguer dans Git Bash',
-    style: 'gray-box',
-  },
-  {
-    id: 'VJQa8rnr',
-    title: 'Initialisation de Git',
-    style: 'gray-box',
-  },
-  {
-    id: 'HbPx8Vjp',
-    title: 'Autre commandes',
-    style: 'gray-box',
-  },
-]
-export const TeamWorkTitle = [
+export const TeamWorkRight = [
   {
     id: 'N7AxCfh3',
     title: 'Travailler avec un dépot distant',
     style: 'green-box',
-    postion: 'right-part',
     defenition: {
       bold: ['git pull', 'git pull --rebase .', 'git merge '],
       noBold: ['', '', '"non_branche"'],
@@ -50,7 +17,6 @@ export const TeamWorkTitle = [
     id: 'VRsg2NfY',
     title: 'Gérer les branches',
     style: 'gray-box',
-    postion: 'right-part',
     defenition: {
       bold: ['git branch', 'git branch .', 'git checkout', 'git branch -d'],
       noBold: ['"non_branche"', '', '"non_branche"', '"non_branche"'],
@@ -66,7 +32,6 @@ export const TeamWorkTitle = [
     id: '6zGdryoK',
     title: 'Gérer les branches sur un dépôt distant',
     style: 'green-box',
-    postion: 'right-part',
     defenition: {
       bold: ['git push --set-upstream origin', 'git branch -a', 'git push origin --delete'],
       noBold: ['"nom_branche"', '', '"nom_branche"'],
@@ -79,12 +44,11 @@ export const TeamWorkTitle = [
   },
   
 ]
-export const TeamWorkTitleLeft = [
+export const TeamWorkLeft = [
   {
     id: 'r4hG88px',
     title: 'Fichiers indispensables',
     style: 'gray-box',
-    postion: 'left-part',
     defenition: {
       bold: ['.gitignore','','','README.md'],
       noBold: ['','',],
@@ -98,7 +62,6 @@ export const TeamWorkTitleLeft = [
     id: '9qE3Rxu3',
     title: 'Trouver qui a fait quoi',
     style: 'gray-box',
-    postion: 'left-part',
     defenition: {
       bold: ['git blame', 'git blame -L 10,20', ""],
       noBold: ['index.html','index.html'],
