@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../images/logo-github.png'
+import Logo from '../../images/logo-github.png'
 import { Link } from 'react-router-dom'
 
 
@@ -13,7 +13,7 @@ const Header = () => {
   const OwnWork = 'Versionner son travail'
   const TeamWork = 'Travailler en travail'
   return (
-    <header>
+    <header className='Home-Header'>
       <img src={Logo} alt="Icon Github" />
       <div className="title-home">
         <h1>GitHub Cheat Sheet</h1>

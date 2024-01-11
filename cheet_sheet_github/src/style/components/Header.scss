@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .title-home{
   margin: 0 1rem;
@@ -10,8 +10,12 @@ header {
 .Link-Title {
   display: flex;
   align-items: center;
-  justify-content: space-between
 }
 .Link-btn{
   text-decoration: none;
+  margin: 0.2rem 2rem;
+}
+
+.Home-Header {
+  margin: 2.4rem 0;
 }

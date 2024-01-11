@@ -52,6 +52,7 @@ export const TeamWorkLeft = [
     defenition: {
       bold: ['.gitignore','','','README.md'],
       noBold: ['','',],
+      width: '',
       explication: ["renseigner le chemin de chaque fichierque l'on veur commit.","ex: dossier/fichier.txt (ignore le fichier.txt)",
       "ex: dossier/* (ignore tous les fichiers à l'intérieur du dossier)",
       "Renseigner toutes les informations utiles au projet"
@@ -65,6 +66,7 @@ export const TeamWorkLeft = [
     defenition: {
       bold: ['git blame', 'git blame -L 10,20', ""],
       noBold: ['index.html','index.html'],
+      width: 'git-blame',
       explication: [
         "affiche les modifs du fichier 'index.html' ligne par ligne",
 "afiche les modifs de la ligne 10 à 20",

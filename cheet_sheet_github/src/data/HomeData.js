@@ -52,7 +52,7 @@ export const GitBashData = [
     defenition: {
       bold: ['pwd', 'mkdir', 'touch', 'ls', 'ls -la', 'cd', 'cd ..'],
       noBold: ['','"dossier"', '"file"','', '', 'dossier',''],
-      style: 'git_config_list',
+      style: 'git_bash_list',
       explication: [
         'savoir dans quel dossier je suis',
         'créer un dossier (Make Directory)',

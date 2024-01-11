@@ -14,7 +14,7 @@ const Gitignore = () => {
               {item.defenition
                 ? item.defenition.bold.map((boldItem, index) => (
                     <li key={index}>
-                      <p className="definition">
+                      <p className={`definition ${item.defenition.width}`}>
                         <b>{boldItem}</b> {item.defenition.noBold[index]}
                       </p>
                       <p className="explication">

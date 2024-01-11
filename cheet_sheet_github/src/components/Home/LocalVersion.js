@@ -1,10 +1,11 @@
 import { LocalVersionData } from '../../data/HomeData'
-import Header from '../Header';
+// import Header from '../Header';
+import HomeHeader from './Header';
 
 const LocalVersion = () => {
   return (
-    <section className='right-part'>
-      <Header/>
+    <section className='right-part right-margin'>
+      <HomeHeader/>
       {LocalVersionData.map((item, index) => (
         <article key={index} id={item.id} className={item.style}>
           <div className="title-p-box">

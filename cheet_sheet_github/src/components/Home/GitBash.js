@@ -3,7 +3,7 @@ import CommitOwnP from '../CommitOwn';
 
 const GitBash = () => {
   return (
-    <section className='left-part'>
+    <section className='left-part margin-left'>
     {GitBashData.map((item, index) => (
       <article key={index} className={item.style}>
         <div className="title-p-box">
