@@ -16,7 +16,7 @@ const CommitOwnP = () => {
             </li>
             <li>
               <p>
-                <strong>git commit -m</strong>"message"
+                <strong>git commit -m</strong> "message"
               </p>
             </li>
 

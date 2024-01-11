@@ -4,8 +4,8 @@ export const TeamWorkRight = [
     title: 'Travailler avec un dépot distant',
     style: 'green-box',
     defenition: {
-      bold: ['git pull', 'git pull --rebase .', 'git merge '],
-      noBold: ['', '', '"non_branche"'],
+      bold: ['git pull', 'git pull --rebase', 'git merge '],
+      noBold: ['', '', 'nom_branche'],
       explication: [
         'récupérer MAJ sur dépot distant',
         'fusionner les branches',
@@ -18,8 +18,8 @@ export const TeamWorkRight = [
     title: 'Gérer les branches',
     style: 'gray-box',
     defenition: {
-      bold: ['git branch', 'git branch .', 'git checkout', 'git branch -d'],
-      noBold: ['"non_branche"', '', '"non_branche"', '"non_branche"'],
+      bold: ['git branch', 'git branch', 'git checkout', 'git branch -d'],
+      noBold: ['nom_branche', '', 'nom_branche', 'nom_branche'],
       explication: [
         'créer branche',
         'afficher les branches',
@@ -33,8 +33,8 @@ export const TeamWorkRight = [
     title: 'Gérer les branches sur un dépôt distant',
     style: 'green-box',
     defenition: {
-      bold: ['git push --set-upstream origin', 'git branch -a', 'git push origin --delete'],
-      noBold: ['"nom_branche"', '', '"nom_branche"'],
+      bold: ['git push --set-upstream origin', 'git branch -a', 'git push origin --delete nom_branche'],
+      noBold: ['nom_branche', '', ''],
       explication: [
         "créer la branche en dépôt distant (il faut d'abord faire un 'git branche nom_branche' pour la créer en local)",
         "voir la liste des branches sur le dépôt distant",
@@ -53,7 +53,7 @@ export const TeamWorkLeft = [
       bold: ['.gitignore','','','README.md'],
       noBold: ['','',],
       width: '',
-      explication: ["renseigner le chemin de chaque fichierque l'on veur commit.","ex: dossier/fichier.txt (ignore le fichier.txt)",
+      explication: ["renseigner le chemin de chaque fichier que l'on veut pas commit.","ex: dossier/fichier.txt (ignore le fichier.txt)",
       "ex: dossier/* (ignore tous les fichiers à l'intérieur du dossier)",
       "Renseigner toutes les informations utiles au projet"
       ],

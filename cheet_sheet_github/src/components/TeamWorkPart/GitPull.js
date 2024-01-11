@@ -6,8 +6,8 @@ const GitPull = () => {
   return (
     <section className="right-part">
       <Header />
-      {TeamWorkRight.map((item) => (
-        <article className={item.style}>
+      {TeamWorkRight.map((item, index) => (
+        <article key={index} className={item.style}>
           <div className="title-p-box">
             <h3>{item.title}</h3>
             <div className="head-bar"></div>

@@ -9,7 +9,7 @@ export const LocalVersionData = [
       explication: [
         'initialise le dépot (se mettre sur le bon dossier), mieux à faire depuis Github.com',
         'ajoute toutes les modifications ( le . symbolise tout )',
-        "créer un nouveau commit git add  pousse les fichiers en zone d'index, git commitles sauvegarde réellement dans un nouveau commit",
+        "créer un nouveau commit git add  pousse les fichiers en zone d'index, git commit les sauvegardes réellement dans un nouveau commit",
       ],
     },
   },
@@ -19,7 +19,7 @@ export const LocalVersionData = [
     style: 'gray-box',
     defenition: {
       bold: ['git log', 'git log -n2', 'git show ', 'git checkout', 'git checkout main' ],
-      noBold: ['','git log -n2', 'sha-1','sha-1',''],
+      noBold: ['','', 'sha-1','sha-1',''],
       explication: [
         'liste des commits',
         'affiche les 2 derniers commits',
@@ -51,7 +51,7 @@ export const GitBashData = [
     style: 'gray-box',
     defenition: {
       bold: ['pwd', 'mkdir', 'touch', 'ls', 'ls -la', 'cd', 'cd ..'],
-      noBold: ['','"dossier"', '"file"','', '', 'dossier',''],
+      noBold: ['','"dossier"', '"file.txt"','', '', 'dossier',''],
       style: 'git_bash_list',
       explication: [
         'savoir dans quel dossier je suis',
@@ -86,7 +86,7 @@ export const GitBashData = [
     defenition: {
       bold: ['git status', 'git diff'],
       noBold: ['', ''],
-      style: 'git_config_list',
+      style: 'git_status_list',
       explication: [
         'état du fichier',
         'affiche les modifications avant commit'

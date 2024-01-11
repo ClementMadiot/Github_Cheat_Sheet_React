@@ -5,8 +5,8 @@ import CommitOwnP from '../CommitOwn';
 const Gitignore = () => {
   return (
     <section className='left-part'>
-      {TeamWorkLeft.map((item) => (
-        <article className={item.style}>
+      {TeamWorkLeft.map((item, index) => (
+        <article key={index} className={item.style}>
           <div className="title-p-box">
             <h3>{item.title}</h3>
             <div className="head-bar"></div>
