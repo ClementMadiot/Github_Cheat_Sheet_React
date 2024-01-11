@@ -1,3 +1,4 @@
+import React from 'react'
 import LocalVersion from '../components/Home/LocalVersion'
 import GitBash from '../components/Home/GitBash'
 

@@ -15,7 +15,7 @@ const LocalVersion = () => {
                 ? item.defenition.bold.map((boldItem, index) => (
                     <li key={index}>
                       <p className="definition">
-                        <b>{boldItem}</b> {item.defenition.noBold[index]}
+                        <strong>{boldItem}</strong> {item.defenition.noBold[index]}
                       </p>
                       <p className="explication">
                         {item.defenition.explication[index]}

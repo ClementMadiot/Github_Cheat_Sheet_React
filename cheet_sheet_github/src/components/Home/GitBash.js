@@ -13,7 +13,7 @@ const GitBash = () => {
             {item.defenition
               ? item.defenition.bold.map((boldItem, index) => (
                   <li key={index}>
-                    <p className="definition">
+                    <p className={`defenition ${item.defenition.style}`}>
                       <b>{boldItem}</b> {item.defenition.noBold[index]}
                     </p>
                     <p className="explication">

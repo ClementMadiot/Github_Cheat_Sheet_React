@@ -1,13 +1,13 @@
-// import { TeamWorkRight } from '../../data/TeamWorkData';
-import { TeamWorkRight } from '../../data/HomeData';
+import React from 'react'
+import { TeamWorkRight } from '../../data/TeamWorkData'
 import Header from '../Header';
 
 const GitPull = () => {
   return (
     <section section className='right-part'>
       <Header/>
-      {TeamWorkRight.map((item, index) => (
-        <article key={index} className={item.style}>
+      {TeamWorkRight.map((item) => (
+        <article className={item.style}>
           <div className="title-p-box">
             <h3>{item.title}</h3>
             <div className="head-bar"></div>
