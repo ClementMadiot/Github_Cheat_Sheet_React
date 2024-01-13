@@ -3,6 +3,9 @@ header {
   flex-direction: row;
   align-items: center;
   margin: 1rem 0;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 .title-home{
   margin: 0 1rem;
@@ -18,4 +21,10 @@ header {
 
 .Home-Header {
   margin: 2.4rem 0;
+}
+header img {
+  @media screen and (max-width: 1230px) {
+    width: 100px;
+    height: 100px;
+  }
 }
